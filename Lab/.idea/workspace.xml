@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="291a0364-f47e-4461-9894-c4029ce9228a" name="Changes" comment="" />
+    <list default="true" id="291a0364-f47e-4461-9894-c4029ce9228a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Practice/Practice/src/main/java/org/example/Arrayinput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/src/main/java/DataStructure/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="330pOpNWpS4eGzoUkwBTei7LlCT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +29,8 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/muzzi/Downloads/Ds/DataStructure/Lab"
   }
