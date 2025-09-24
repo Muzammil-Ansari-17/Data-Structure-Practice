@@ -5,8 +5,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Lab_1Task_2 a = new Lab_1Task_2();
-        a.calculate();
-        a.display();
+       ComparingArray a = new ComparingArray();
+       a.input();
+      a.found();
     }
 }
