@@ -5,10 +5,11 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-       Array_Size_by_User a = new Array_Size_by_User();
-       a.size_input();
-       a.arr_input();
-       a.arr_output();
+        Array_Search_By_Index a = new Array_Search_By_Index();
+        a.size_input();
+        a.arr_input();
+        a.search_num();
+        a.search();
 
     }
 }
