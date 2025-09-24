@@ -5,10 +5,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-       Arrayinput a = new Arrayinput();
-       a.insert(5);
-       a.display();
-
+       Array_Size_by_User a = new Array_Size_by_User();
+       a.size_input();
+       a.arr_input();
+       a.arr_output();
 
     }
 }
