@@ -18,7 +18,7 @@ public class TwodArrray {
         int[][] arr = new int[row][coloum];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < coloum; j++) {
-                System.out.print("Enter Elemnt of Array"+i+" "+j+" :");
+                System.out.print("Enter Element of Array"+i+" "+j+" :");
                 arr[i][j] = sc.nextInt();
             }
             System.out.println();
