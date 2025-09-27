@@ -9,14 +9,15 @@ public class Array_List {
         list.add(1);
         list.add(2);
         list.add(3);
-        list.add(10);
+        list.add(25);
         list.add(100);
         System.out.println(list);
 
         int element = list.get(2);
         System.out.println(element);
 
-        list.add(0,10);
+        list.addFirst(10);
+        list.add(4,-1);
         System.out.println(list);
 
         list.set(0,99);
@@ -28,8 +29,8 @@ public class Array_List {
         int size = list.size();
         System.out.println(size);
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
 
 
