@@ -2,8 +2,6 @@ package org.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static java.util.Collections.swap;
-
 public class Linear_binary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -27,10 +25,10 @@ public class Linear_binary {
         System.out.println();
 
         System.out.println("Linear Search ");
-        int linear = linearSearch(arr,target,size);
+        linearSearch(arr,target,size);
 
         System.out.println("Bubble Search ");
-        int bubble = bubblesort(arr,target,size);
+        bubblesort(arr,target,size);
 
     }
 
