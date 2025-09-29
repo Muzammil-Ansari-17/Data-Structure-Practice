@@ -6,14 +6,14 @@ public class TwoSum {
         int target = 7;
 
         public int[] solution(arr , target){
-
             for (int i = 0; i < arr.length; i++) {
                 for (int j = i+1; j < arr.length ; j++) {
                     if(arr[i] + arr[j] == target){
-                        return int[]{i,j};
+                        return new int[]{i,j};
                     }
                 }
             }
+            return int[]{};
         }
 
 
