@@ -17,10 +17,10 @@ public class Array_List {
         System.out.println(element);
 
         list.addFirst(10);
-        list.add(4,-1);
+        list.add(4, -1);
         System.out.println(list);
 
-        list.set(0,99);
+        list.set(0, 99);
         System.out.println(list);
 
         list.remove(3);
@@ -38,5 +38,4 @@ public class Array_List {
         System.out.println(list);
 
     }
-
 }
