@@ -26,11 +26,6 @@ public class Linear_binary {
 
         System.out.println();
 
-        int[] sortedarr = Arrays.copyOf(arr, size);
-        Arrays.sort(arr);
-
-        System.out.println();
-
         System.out.println("Linear Search ");
         int linear = linearSearch(arr,target,size);
 
@@ -50,8 +45,9 @@ public class Linear_binary {
     }
 
     public static int bubblesort(int[]arr, int target, int size){
+        Arrays.sort(arr);
         int low = 0;
-        int high = size-1;
+        int high = size - 1;
         while(low <= high){
             int mid = (low+high) / 2;
             if(arr[mid] == target){
