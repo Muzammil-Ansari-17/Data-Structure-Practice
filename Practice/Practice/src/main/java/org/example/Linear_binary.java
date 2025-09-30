@@ -25,15 +25,37 @@ public class Linear_binary {
         System.out.println();
 
         System.out.println("Linear Search ");
-        linearSearch(arr,target,size);
+        linearSearch(arr,target);
 
-        System.out.println("Bubble Search ");
-        bubblesort(arr,target,size);
+        System.out.println("\nBubble Search ");
+        binarysearch(arr,target);
 
+        int n = 100000;
+        int[] testarr = new int[n];
+        for (int i = 0; i < n; i++) {
+            testarr[i] = i;
+        }
+        int testtarget = n-1;
+        System.out.println();
+
+        long Lstart = System.nanoTime();
+        linearSearch(testarr,testtarget);
+        long Lend = System.nanoTime();
+        System.out.println();
+
+        long Bstart = System.nanoTime();
+        binarysearch(testarr,testtarget);
+        long Bend = System.nanoTime();
+        System.out.println();
+
+
+        System.out.println("\nTest Check");
+        System.out.println("\nLinear Test :"+(Lend - Lstart)+" ns");
+        System.out.println("\nBinary Test:"+(Bend - Bstart)+ " ns");
     }
 
-    public static int linearSearch(int[] arr, int target, int size){
-        for (int i = 0; i < size; i++) {
+    public static int linearSearch(int[] arr, int target){
+        for (int i = 0; i < arr.length; i++) {
             if(arr[i] == target){
                 System.out.println(target+" at index :"+i);
                 return i;
@@ -42,10 +64,10 @@ public class Linear_binary {
         return -1;
     }
 
-    public static int bubblesort(int[]arr, int target, int size){
+    public static int binarysearch(int[]arr, int target){
         Arrays.sort(arr);
         int low = 0;
-        int high = size - 1;
+        int high = arr.length - 1;
         while(low <= high){
             int mid = (low+high) / 2;
             if(arr[mid] == target){
@@ -59,8 +81,4 @@ public class Linear_binary {
         }
         return -1;
     }
-
-
-
-
 }
