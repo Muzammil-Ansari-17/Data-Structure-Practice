@@ -2,7 +2,6 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static java.util.Collections.binarySearch;
 
 public class Array_List {
     public static void main(String[] args) {
