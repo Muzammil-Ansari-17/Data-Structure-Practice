@@ -54,17 +54,16 @@ public class Linear_binary {
         System.out.println("\nBinary Test:"+(Bend - Bstart)+ " ns");
     }
 
-    public static int linearSearch(int[] arr, int target){
+    public static void linearSearch(int[] arr, int target){
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] == target){
                 System.out.println(target+" at index :"+i);
-                return i;
+                return;
             }
         }
-        return -1;
     }
 
-    public static int binarysearch(int[]arr, int target){
+    public static void binarysearch(int[]arr, int target){
         Arrays.sort(arr);
         int low = 0;
         int high = arr.length - 1;
@@ -72,13 +71,12 @@ public class Linear_binary {
             int mid = (low+high) / 2;
             if(arr[mid] == target){
                 System.out.println(target+" found");
-                return mid;
+                return;
             } else if (arr[mid] < target) {
                 low = mid + 1;
             }else{
                 high = mid - 1;
             }
         }
-        return -1;
     }
 }
