@@ -5,7 +5,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Dynamic_Array A = new Dynamic_Array(10);
+        Dynamic_Array A = new Dynamic_Array(5);
         System.out.println("Inserting Array");
         A.insert(20);
         A.insert(30);

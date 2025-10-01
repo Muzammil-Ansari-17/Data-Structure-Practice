@@ -20,9 +20,10 @@ public class Dynamic_Array {
         if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Index out of bound");
         }
-        for (int i = index; i < size; i++) {
+        for (int i = index; i < size-1; i++) {
             arr[i] = arr[i+1];
         }
+        arr[size -1 ] = 0;
         size--;
     }
 
@@ -36,12 +37,10 @@ public class Dynamic_Array {
     }
 
     public void update(int index, int value){
-        if(index < 0 || index > size){
+        if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Index out of bound");
         }
-        for (int i = 0; i < size; i++) {
-            arr[index] = value;
-        }
+        arr[index] = value;
     }
     private void resize(){
         int newcapacity = arr.length*2;
@@ -55,9 +54,10 @@ public class Dynamic_Array {
 
 
     public void display(){
-        for (int x :arr){
-            System.out.println(x);
+        for (int i = 0; i < size; i++){
+            System.out.println(arr[i]);
         }
+
     }
 }
 
