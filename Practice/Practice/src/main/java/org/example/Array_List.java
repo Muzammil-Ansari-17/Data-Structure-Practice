@@ -1,43 +1,33 @@
 package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 
 public class Array_List {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
+        Random r = new Random();
 
-        list.add(19);
-        list.add(26);
-        list.add(93);
-        list.add(25);
-        list.add(100);
-        list.add(26);
-        list.add(66);
-        list.add(99);
-        list.add(76);
-        list.add(-3);
-        list.add(95);
-        list.add(0);
-        list.add(-26);
-        list.add(56);
-        list.add(-6);
-        list.add(-83);
-        list.add(65);
-        list.add(40);
-        list.add(16);
-        list.add(46);
+        for (int i = 0; i <= 20; i++) {
+            list.add(r.nextInt(100));
+        }
 
-        System.out.println(list);
+        System.out.println("Unsorted List");
+        for (int x: list){
+            System.out.println(x);
+        }
 
         Collections.sort(list);
-        System.out.println(list);
+        System.out.println("Sorted List");
+        for (int x: list){
+            System.out.println(x);
+        }
 
-        int result = Collections.binarySearch(list,19);
-        System.out.println(result);
-
-
-
-
+        int target = list.get(r.nextInt(list.size()));
+        System.out.println("Searching for "+target);
+        System.out.println("Binary Search");
+        int result = Collections.binarySearch(list,target);
+        System.out.println("Found at index :"+result);
     }
 }
