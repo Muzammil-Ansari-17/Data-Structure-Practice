@@ -7,6 +7,7 @@ public class Main {
 
     Arrayinput A = new Arrayinput();
     A.insert(5);
+        System.out.println(A);
 
 
     }

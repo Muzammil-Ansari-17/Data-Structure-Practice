@@ -33,6 +33,8 @@ public class Array_List {
         Collections.sort(list);
         System.out.println(list);
 
+        int result = Collections.binarySearch(list,19);
+        System.out.println(result);
 
 
 

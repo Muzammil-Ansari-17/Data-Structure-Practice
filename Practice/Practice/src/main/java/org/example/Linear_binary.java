@@ -27,7 +27,7 @@ public class Linear_binary {
         System.out.println("Linear Search ");
         linearSearch(arr,target);
 
-        System.out.println("\nBubble Search ");
+        System.out.println("\nBinary Search ");
         binarysearch(arr,target);
 
         int n = 100000;
