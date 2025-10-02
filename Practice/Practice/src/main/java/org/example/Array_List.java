@@ -3,7 +3,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-
+//24F-CS-154
+//Muzammil Ahmed
 public class Array_List {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();

@@ -1,7 +1,8 @@
 package org.example;
 import java.util.Arrays;
 import java.util.Scanner;
-
+//24F-CS-154
+//Muzammil Ahmed
 public class Linear_binary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,7 +10,6 @@ public class Linear_binary {
         System.out.println("Enter Size of Array :");
         int size = sc.nextInt();
 
-        System.out.println();
 
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
@@ -27,7 +27,7 @@ public class Linear_binary {
         System.out.println("Linear Search ");
         linearSearch(arr,target);
 
-        System.out.println("\nBinary Search ");
+        System.out.println("Binary Search ");
         binarysearch(arr,target);
 
         int n = 100000;
@@ -36,22 +36,20 @@ public class Linear_binary {
             testarr[i] = i;
         }
         int testtarget = n-1;
-        System.out.println();
 
         long Lstart = System.nanoTime();
         linearSearch(testarr,testtarget);
         long Lend = System.nanoTime();
-        System.out.println();
+
 
         long Bstart = System.nanoTime();
         binarysearch(testarr,testtarget);
         long Bend = System.nanoTime();
-        System.out.println();
 
 
-        System.out.println("\nTest Check");
-        System.out.println("\nLinear Test :"+(Lend - Lstart)+" ns");
-        System.out.println("\nBinary Test:"+(Bend - Bstart)+ " ns");
+        System.out.println("Test Check");
+        System.out.println("Linear Test :"+(Lend - Lstart)+" ns");
+        System.out.println("Binary Test:"+(Bend - Bstart)+ " ns");
     }
 
     public static void linearSearch(int[] arr, int target){

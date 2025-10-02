@@ -2,7 +2,8 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Random;
-
+//24F-CS-154
+//Muzammil Ahmed
 public class Dyanamic_ArrayList {
     public static void main(String[] args) {
         ArrayList<Integer> num = new ArrayList<>();

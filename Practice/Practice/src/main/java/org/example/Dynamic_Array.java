@@ -1,8 +1,10 @@
 package org.example;
+//24F-CS-154
+//Muzammil Ahmed
 
 public class Dynamic_Array {
-    private int[] arr;
-    private int size;
+    int[] arr;
+     int size;
 
     public Dynamic_Array(int capacity){
         this.arr = new int[capacity];
