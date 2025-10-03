@@ -19,9 +19,6 @@ public class Dynamic_Array {
     }
 
     public void remove(int index){
-        if(index < 0 || index >= size){
-            throw new IndexOutOfBoundsException("Index out of bound");
-        }
         for (int i = index; i < size-1; i++) {
             arr[i] = arr[i+1];
         }
@@ -39,9 +36,6 @@ public class Dynamic_Array {
     }
 
     public void update(int index, int value){
-        if(index < 0 || index >= size){
-            throw new IndexOutOfBoundsException("Index out of bound");
-        }
         arr[index] = value;
     }
     private void resize(){
@@ -53,7 +47,6 @@ public class Dynamic_Array {
         }
         arr = newarr;
     }
-
 
     public void display(){
         for (int i = 0; i < size; i++){

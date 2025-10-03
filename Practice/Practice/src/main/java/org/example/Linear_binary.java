@@ -12,7 +12,7 @@ public class Linear_binary {
 
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.println("Enter elements of Array"+i+" :");
+            System.out.println("Enter elements of Array" + i + " :");
             arr[i] = sc.nextInt();
         }
 
@@ -24,7 +24,7 @@ public class Linear_binary {
         System.out.println();
 
         System.out.println("Linear Search ");
-        linearSearch(arr,target);
+        linearSearch(arr, target);
 
         System.out.println("Sorted array");
         for (int x : sort(arr)) {
@@ -33,28 +33,35 @@ public class Linear_binary {
 
 
         System.out.println("Binary Search ");
-        binarysearch(arr,target);
+        binarysearch(arr, target);
 
-        int n = 100000;
-        int[] testarr = new int[n];
-        for (int i = 0; i < n; i++) {
-            testarr[i] = i;
+        int[] sizes = {1000, 10000, 100000, 1000000};
+
+        System.out.println("n\t\t\t\t\t\tLinear Search (ns)\tBinary Search (ns)");
+        System.out.println("----------------------------------------------------");
+
+        for (int n : sizes) {
+            int[] testarr = new int[n];
+            for (int i = 0; i < n; i++) {
+                testarr[i] = i;
+            }
+            int testtarget = n - 1;
+
+
+            long Lstart = System.nanoTime();
+            linearSearch(testarr, testtarget);
+            long Lend = System.nanoTime();
+            long Ltime = Lend - Lstart;
+
+
+            long Bstart = System.nanoTime();
+            binarysearch(testarr, testtarget);
+            long Bend = System.nanoTime();
+            long Btime = Bend - Bstart;
+
+
+            System.out.println(n + "\t\t\t\t\t\t" + Ltime + "\t\t\t\t\t\t" + Btime);
         }
-        int testtarget = n-1;
-
-        long Lstart = System.nanoTime();
-        linearSearch(testarr,testtarget);
-        long Lend = System.nanoTime();
-
-
-        long Bstart = System.nanoTime();
-        binarysearch(testarr,testtarget);
-        long Bend = System.nanoTime();
-
-
-        System.out.println("Test Check");
-        System.out.println("Linear Test :"+(Lend - Lstart)+" ns");
-        System.out.println("Binary Test:"+(Bend - Bstart)+ " ns");
     }
 
     public static void linearSearch(int[] arr, int target){
