@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Arrays;
 import java.util.Scanner;
 //24F-CS-154
 //Muzammil Ahmed
