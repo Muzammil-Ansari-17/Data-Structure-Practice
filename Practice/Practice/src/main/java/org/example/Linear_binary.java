@@ -27,6 +27,12 @@ public class Linear_binary {
         System.out.println("Linear Search ");
         linearSearch(arr,target);
 
+        System.out.println("Sorted array");
+        for (int x : sort(arr)) {
+            System.out.println(x);
+        }
+
+
         System.out.println("Binary Search ");
         binarysearch(arr,target);
 
@@ -61,14 +67,27 @@ public class Linear_binary {
         }
     }
 
+    public static int[] sort(int[] arr){
+        for (int i = 0; i < arr.length -1; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[i] > arr[j]){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+
     public static void binarysearch(int[]arr, int target){
-        Arrays.sort(arr);
+        sort(arr);
         int low = 0;
         int high = arr.length - 1;
         while(low <= high){
             int mid = (low+high) / 2;
             if(arr[mid] == target){
-                System.out.println(target+" found");
+                System.out.println(target+" found at index "+mid);
                 return;
             } else if (arr[mid] < target) {
                 low = mid + 1;
@@ -76,5 +95,6 @@ public class Linear_binary {
                 high = mid - 1;
             }
         }
+        System.out.println("Not found");
     }
 }
