@@ -28,9 +28,13 @@ public class LinkedL {
             Node newNode = new Node(data);
             if(head == null){
                 head = newNode;
-                new
+                return;
             }
-
+            Node currNode = head;
+            while(currNode.next != null){
+                currNode = currNode.next;
+            }
+            currNode.next = newNode;
         }
 
 
