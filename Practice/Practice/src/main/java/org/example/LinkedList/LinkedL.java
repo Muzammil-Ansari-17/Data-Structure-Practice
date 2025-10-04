@@ -2,7 +2,6 @@ package org.example.LinkedList;
 
 public class LinkedL {
         Node head;
-        Node tail;
         class Node{
             String data;
             Node next;
